@@ -18,3 +18,32 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #513e83;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #576570;
+  font-size: 15px;
+  font-weight: 700;
+}
+.active {
+  font-weight: bold;
+  color: #d42727;
+}
