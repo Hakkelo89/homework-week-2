@@ -1,4 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
+@charset "utf-8" 
+/* CSS Document */
+body {
+  background: color rgb(243, 180, 180);
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  width: 100½;
+  height: 95vh;
+  background-image: url("../images/Background Picture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
