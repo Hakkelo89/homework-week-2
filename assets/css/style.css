@@ -50,7 +50,7 @@ nav ul li a {
 .text-container p:nth-child(1) {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: bold;
-  color: #797070;
+  color: #dbc3c3;
   font-size: 22px;
 }
 .text-container p:nth-child(2) {
@@ -59,4 +59,20 @@ nav ul li a {
   letter-spacing: 1px;
   color: #e2cccc;
   font-size: 60px;
+}
+.text-container p:nth-child(3) {
+  font-family: "Times New Roman", Times, serif;
+  color: #b39a9a;
+  font-size: 30px;
+  line-height: 30px;
+}
+.text-container p {
+  line-height: 0px;
+  margin: 45px 0px 25px;
+}
+.text-container {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%, -42%);
 }
