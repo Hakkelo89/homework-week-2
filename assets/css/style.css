@@ -17,6 +17,7 @@ section {
   background-image: url("../images/Background Picture.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 nav {
   display: flex;
@@ -75,4 +76,26 @@ nav ul li a {
   left: 13%;
   top: 42%;
   transform: translate(-13%, -42%);
+}
+.text-container button {
+  width: 130px;
+  height: 42px;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 0px 10px;
+}
+.hire-btn {
+  border: 2px solid #373636;
+  color: #373636;
+}
+.down-cv {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none;
+}
+button:active {
+  transform: scale(1.1);
 }
