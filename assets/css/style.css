@@ -14,7 +14,7 @@ a {
 section {
   width: 100½;
   height: 95vh;
-  background-image: url("../images/Background Picture.jpg");
+  background-image: url("../images/Background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -51,19 +51,19 @@ nav ul li a {
 .text-container p:nth-child(1) {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: bold;
-  color: #dbc3c3;
+  color: #3b3636;
   font-size: 22px;
 }
 .text-container p:nth-child(2) {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #e2cccc;
+  color: #0d101b;
   font-size: 60px;
 }
 .text-container p:nth-child(3) {
   font-family: "Times New Roman", Times, serif;
-  color: #b39a9a;
+  color: #886418;
   font-size: 30px;
   line-height: 30px;
 }
