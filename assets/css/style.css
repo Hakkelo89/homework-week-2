@@ -51,19 +51,19 @@ nav ul li a {
 .text-container p:nth-child(1) {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: bold;
-  color: #3b3636;
+  color: #6d1b1b;
   font-size: 22px;
 }
 .text-container p:nth-child(2) {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #0d101b;
+  color: #4a5fb6;
   font-size: 60px;
 }
 .text-container p:nth-child(3) {
   font-family: "Times New Roman", Times, serif;
-  color: #886418;
+  color: #b12222;
   font-size: 30px;
   line-height: 30px;
 }
@@ -98,4 +98,11 @@ nav ul li a {
 }
 button:active {
   transform: scale(1.1);
+}
+.model {
+  height: 560px;
+  position: absolute;
+  bottom: 0px;
+  left: 70%;
+  transform: translateX(-70%);
 }
