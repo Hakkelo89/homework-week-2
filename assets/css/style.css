@@ -1,17 +1,17 @@
 @charset "utf-8" 
 /* CSS Document */
-body {
+body{
   background: color rgb(243, 180, 180);
   margin: 0px;
   padding: 0px;
 }
-ul {
+ul{
   list-style: none;
 }
-a {
+a{
   text-decoration: none;
 }
-section {
+section{
   width: 100½;
   height: 95vh;
   background-image: url("../images/Background2.jpg");
@@ -19,7 +19,7 @@ section {
   background-size: cover;
   position: relative;
 }
-nav {
+nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,23 +28,24 @@ nav {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   padding: 0px 5%;
 }
-nav ul {
+nav ul{
   display: flex;
 }
-nav ul li a {
+nav ul li a{
   margin: 30px;
   font-family: myriad pro "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #505050;
   font-size: 15px;
   font-weight: 700;
 }
-.logo {
+.logo{
   font-family: Arial, Helvetica, sans-serif;
-  color: #576570;
+  color: #2e90db;
   font-size: 15px;
   font-weight: 700;
 }
-.active {
+.active{
   font-weight: bold;
   color: #d42727;
 }
@@ -62,7 +63,7 @@ nav ul li a {
   font-size: 60px;
 }
 .text-container p:nth-child(3) {
-  font-family: "Times New Roman", Times, serif;
+  font-family:'Times New Roman', Times, serif
   color: #b12222;
   font-size: 30px;
   line-height: 30px;
@@ -118,7 +119,7 @@ button:active {
   justify-content: space-evenly;
   align-items: center;
 }
-.about-container img {
+.about-container img{
   height: 250px;
 }
 .about-text {
@@ -185,14 +186,29 @@ button:active {
   width: 500px;
   margin: 50px 0px;
 }
-.box-1,.box-2,.box-3{
-  width: 300px;
-  height: 320px;
+.box-1,.box-2,.box-3,.box-4{
+  width:300px;
+  height:320px;
   background-repeat:no-repeat;
-  background-size: cover;
+  background-size:cover;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
-
+.box-container{
+  display: flex;
+  justify-content: space-between;
+}
+.box-1{
+  background-image: url("../images/ProjectBox-Background.jpg");
+}
+.box-2{
+  background-image: url("../images/ProjectBox-Background.jpg");
+}
+.box-3{
+  background-image: url("../images/ProjectBox-Background.jpg");
+}
+.box-4{
+  background-image: url("../images/ProjectBox-Background.jpg");
+}
 
 
 
