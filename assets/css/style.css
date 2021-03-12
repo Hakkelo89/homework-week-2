@@ -192,6 +192,10 @@ button:active {
   background-repeat:no-repeat;
   background-size:cover;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .box-container{
   display: flex;
@@ -209,7 +213,17 @@ button:active {
 .box-4{
   background-image: url("../images/ProjectBox-Background.jpg");
 }
-
+.contact-me{
+  width:100%;
+  height:280px;
+  background-image: url("../images/Footer-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
