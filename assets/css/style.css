@@ -1,37 +1,43 @@
-@charset "utf-8" 
+@charset "utf-8";
 /* CSS Document */
-body{
-  background: color rgb(243, 180, 180);
+body {
+  background: color rgb(255, 255, 255);
   margin: 0px;
   padding: 0px;
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-section{
+
+.area1 {
+  float: left;
+  width: 50%;
+  height: 180px;
+}
+
+section {
   width: 100½;
   height: 95vh;
-  background-image: url("../images/Background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: #513e83;
+  background-color: #ffffff;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   padding: 0px 5%;
 }
-nav ul{
+nav ul {
   display: flex;
 }
-nav ul li a{
+nav ul li a {
   margin: 30px;
   font-family: myriad pro "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -39,13 +45,13 @@ nav ul li a{
   font-size: 15px;
   font-weight: 700;
 }
-.logo{
+.logo {
   font-family: Arial, Helvetica, sans-serif;
   color: #2e90db;
   font-size: 15px;
   font-weight: 700;
 }
-.active{
+.active {
   font-weight: bold;
   color: #d42727;
 }
@@ -63,7 +69,7 @@ nav ul li a{
   font-size: 60px;
 }
 .text-container p:nth-child(3) {
-  font-family:'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
   color: #b12222;
   font-size: 30px;
   line-height: 30px;
@@ -119,7 +125,7 @@ button:active {
   justify-content: space-evenly;
   align-items: center;
 }
-.about-container img{
+.about-container img {
   height: 250px;
 }
 .about-text {
@@ -139,84 +145,84 @@ button:active {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  line height: 5px;
+  line-height: 5px;
 }
 .about-text p:nth-child(3),
-.about-text p:nth-child(4){
+.about-text p:nth-child(4) {
   color: #7e7d7d;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
 }
-.about-text button{
+.about-text button {
   width: 120px;
   height: 40px;
   color: #ffffff;
   outline: none;
   border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #262525;
 }
-.Projects{
+.Projects {
   height: 600px;
   background-color: #ffffff;
-  padding:2% 10% 0px 10%;
-
+  padding: 2% 10% 0px 10%;
 }
 .Projects-text p:nth-child(1) {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   color: #3e3d3d;
   font-size: 30px;
   line-height: 0px;
-
 }
 .Projects-text p:nth-child(2) {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   color: #3e3d3d;
   font-size: 15px;
   line-height: 5px;
 }
 .Projects-text p:nth-child(3) {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #7e7d7d;
   font-size: 30px;
 }
-.projects-text{
+.projects-text {
   width: 500px;
   margin: 50px 0px;
 }
-.box-1,.box-2,.box-3,.box-4 a:hover iframe{
-  width:300px;
-  height:320px;
-  background-repeat:no-repeat;
-  background-size:cover;
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+  width: 300px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
-  
+  flex-direction: initial;
 }
-.box-container{
+.box-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.box-1{
+.box-1 {
   background-image: url("../images/Project-1.png");
 }
-.box-2{
-  background-image: url("../images/ProjectBox-Background.jpg");
+.box-2 {
+  background-image: url();
 }
-.box-3{
-  background-image: url("../images/ProjectBox-Background.jpg");
+.box-3 {
+  background-image: url();
 }
-.box-4{
-  background-image: url("../images/ProjectBox-Background.jpg");
+.box-4 {
+  background-image: url();
 }
-.contact-me{
-  width:100%;
-  height:280px;
+.contact-me {
+  width: 100%;
+  height: 280px;
   background-image: url("../images/Footer-photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,14 +231,14 @@ button:active {
   justify-content: center;
   align-items: center;
 }
-.contact-me p{
+.contact-me p {
   color: #000000;
   font-size: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   border-bottom: 2px solid #000000;
 }
-.contact-me button{
+.contact-me button {
   width: 200px;
   height: 40px;
   background-color: #ffffff;
@@ -241,31 +247,30 @@ button:active {
   font-size: 14px;
   font-weight: bold;
 }
-footer{
+footer {
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
-footer p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+footer p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-footer p:nth-child(1){
+footer p:nth-child(1) {
   font-size: 30px;
   font-weight: bold;
   color: #191919;
   line-height: 10px;
 }
-footer p:nth-child(2){
+footer p:nth-child(2) {
   font-size: 16px;
   color: #7e7d7d;
   width: 600px;
   text-align: center;
 }
-.social-icons a{
+.social-icons a {
   width: 40px;
   height: 40px;
   display: flex;
@@ -275,60 +280,14 @@ footer p:nth-child(2){
   margin: 20px 10px;
   border-radius: 50%;
 }
-.social-icons{
+.social-icons {
   display: flex;
 }
-.copyright{
-  color:#565555;
-  font-size:13px;
+.copyright {
+  color: #565555;
+  font-size: 13px;
   position: absolute;
   left: 50%;
   bottom: 10px;
-  transform: translateX(-50%) ;
-
+  transform: translateX(-50%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
