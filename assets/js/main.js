@@ -37,6 +37,7 @@ request.onload = function () {
       '"/>';
     repoHTML += "</div>" + "</div>" + "</a>";
   });
+  repoHTML += "</section>";
 };
 
 const repoCards = document.getElementsByClassName("projectSlider");
