@@ -1,5 +1,6 @@
 // Create a request variable and assing a new XMLHttpRequest object to it.
-const request = new XMLHttpRequest();
+var request = new XMLHttpRequest();
+var repoHTML = "";
 
 //Open a new connection, using the GET request on the API endpoint.
 request.open("GET", "https://api.github.com/users/Hakkelo89/repos", true);
@@ -7,8 +8,9 @@ request.open("GET", "https://api.github.com/users/Hakkelo89/repos", true);
 request.onload = function () {
   //Begin accesing JSON data here
   const data = JSON.parse(this.response);
+  console.log(data);
 
-  const repoHTML =
+  repoHTML =
     "<h2>" +
     "My Projects" +
     "</h2>" +
@@ -17,6 +19,7 @@ request.onload = function () {
     "icon-wrapper" +
     '">';
   $.each(data, function (i, repo) {
+    console.log(repo.html_url);
     repoHTML += "<a target=" + "_blank" + "href=" + repo.html_url + ">";
     repoHTML +=
       '<div class="' +
@@ -42,9 +45,13 @@ request.onload = function () {
 
 const repoCards = document.getElementsByClassName("projectSlider");
 
-repoCards.HTML = "";
+$("projectSlider").html = "";
 
-repoCards.HTML(repoHTML);
+$("projectSlider").html(repoHTML);
+
+/*repoCards.html = "";
+
+repoCards.html(repoHTML);*/
 
 //Send request
 request.send();
