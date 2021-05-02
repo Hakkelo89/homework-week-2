@@ -8,9 +8,12 @@ request.open("GET", "https://api.github.com/users/Hakkelo89/repos", true);
 request.onload = function () {
   //Begin accesing JSON data here
   const data = JSON.parse(this.response);
+  var repoCards = document.getElementById("repos");
+  repoCards.innerHTML = "";
+
   console.log(data);
 
-  repoHTML =
+  repoCards.innerHTML +=
     "<h2>" +
     "My Projects" +
     "</h2>" +
@@ -20,15 +23,16 @@ request.onload = function () {
     '">';
   $.each(data, function (i, repo) {
     console.log(repo.html_url);
-    repoHTML += "<a target=" + "_blank" + "href=" + repo.html_url + ">";
-    repoHTML +=
+    repoCards.innerHTML +=
+      "<a target=" + "_blank" + "href=" + repo.html_url + ">";
+    repoCards.innerHTML +=
       '<div class="' +
       "icons" +
       '">' +
       '<div class="' +
       "icon-slide-container" +
       '">';
-    repoHTML +=
+    repoCards.innerHTML +=
       '<img class="' +
       'slide-icon"' +
       'alt="' +
@@ -38,20 +42,10 @@ request.onload = function () {
       'src="' +
       repo.avatar_url +
       '"/>';
-    repoHTML += "</div>" + "</div>" + "</a>";
+    repoCards.innerHTML += "</div>" + "</div>" + "</a>";
   });
-  repoHTML += "</section>";
+  repoCards.innerHTML += "</section>";
 };
-
-const repoCards = document.getElementsByClassName("projectSlider");
-
-$("projectSlider").html = "";
-
-$("projectSlider").html(repoHTML);
-
-/*repoCards.html = "";
-
-repoCards.html(repoHTML);*/
 
 //Send request
 request.send();
