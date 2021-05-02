@@ -44,7 +44,7 @@ const repoCards = document.getElementsByClassName("projectSlider");
 
 repoCards.HTML = "";
 
-repoCards.HTML = repoHTML;
+repoCards.HTML(repoHTML);
 
 //Send request
 request.send();
